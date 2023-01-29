@@ -1,1 +1,13 @@
+# EMBEDDED SERVER CONFIGURATION (ServerProperties)
+server:
+  port: 8099
+  undertow:
+    max-http-post-size: 209715200
+  compression:
+    enabled: true
 
+# SETTING FOR SWAGGER
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
